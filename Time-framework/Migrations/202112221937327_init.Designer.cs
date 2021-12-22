@@ -13,7 +13,7 @@ namespace Time_framework.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202112200941187_init"; }
+            get { return "202112221937327_init"; }
         }
         
         string IMigrationMetadata.Source

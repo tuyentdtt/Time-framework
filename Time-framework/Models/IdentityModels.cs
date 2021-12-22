@@ -36,6 +36,7 @@ namespace Time_framework.Models
         //public DbSet<AppUsersModel> AppUsersModel { get; set; }
         public DbSet<CommentModel> CommentModel { get; set; }
         public DbSet<CongVietSubModel> CongVietSubModel { get; set; }
+        public DbSet<CongViecModel> CongViecModel { get; set; }
 
         public DbSet<DuAnModel> DuAnModel { get; set; }
         public DbSet<FileDinhKemModel> FileDinhKemModel { get; set; }
@@ -44,5 +45,8 @@ namespace Time_framework.Models
 
         public DbSet<PhongBanModel> PhongBanModel { get; set; }
         public DbSet<TrangThaiModel> TrangThaiModel { get; set; }
+
+        public DbSet<CongviecInCongviecsub> CongviecInCongviecsub { get; set; }
+        public DbSet<AppUser> AppUser { get; set; }
     }
 }

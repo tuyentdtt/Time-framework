@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -10,8 +11,12 @@ namespace Time_framework.Models
     {
         [Key]
         public string Id { get; set; }
-        public CongViecModel MaCongViec_Fk { get; set; }
+
+        
         public string MaCongViec { get; set; }
+        [ForeignKey("MaCongViec")]
+        public CongViecModel CongViecModel { get; set; }
+
         public DateTime NgayTao { get; set; }
         public string NguoiTao { get; set; }
         public DateTime NgaySua { get; set; }

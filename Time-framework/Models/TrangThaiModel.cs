@@ -13,5 +13,7 @@ namespace Time_framework.Models
         public string TenTrangThai { get; set; }
         public string MoTa { get; set; }
         public bool IsDelete { get; set;}
+
+        public ICollection<CongViecModel> CongViecModel { get; set; }
     }
 }
